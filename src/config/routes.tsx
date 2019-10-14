@@ -16,8 +16,7 @@ const routes = [
         },
     },
     {
-        path: '/tasks',
-        component: Login,
+        path: '/tasks/:taskId?',
         render: () => {
             if (!isAuthorized()) {
                 return <Redirect to="/login" />;
