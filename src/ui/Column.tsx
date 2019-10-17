@@ -39,12 +39,6 @@ const styles = (theme: Theme) => createStyles({
         display: 'flex',
         alignItems: 'center',
         marginBottom: '16px'
-    },
-    headerInput: {
-
-    },
-    headerButton: {
-
     }
 });
 
@@ -89,7 +83,6 @@ class Column extends React.Component<ColumnComponentProps, ColumnComponentState>
                 {editMode
                     ? (<div className={classes.headerEditing}>
                         <TextField
-                            className={classes.headerInput}
                             autoFocus
                             id="title"
                             label="Title"

@@ -122,7 +122,7 @@ class TasksList extends React.Component<TasksListComponentProps, TasksListCompon
                         onColumnAdd={() => this.handleColumnAdd()}
                     ></Columns>
                 </main>
-                {taskId && (
+                {!!taskId && (
                     <Modal
                         taskId={taskId}
                         onClose={() => this.handleModalClose()}
