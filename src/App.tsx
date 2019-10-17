@@ -20,7 +20,7 @@ interface AppComponentProps {
 interface AppComponentState {
 }
 
-class App extends React.Component<AppComponentProps, AppComponentState> {
+export class App extends React.Component<AppComponentProps, AppComponentState> {
     constructor(props: any) {
         super(props);
         this.state = {};
